@@ -1,7 +1,12 @@
+import Header from "../components/header";
+import Navbar from "../components/navbar";
 
 
 export default function Root() {
   return (
-    <div>Root</div>
+    <div>
+      <Navbar/>
+      <Header/>
+    </div>
   )
 }
