@@ -4,8 +4,6 @@ import { styled } from "styled-components";
 export const NavbarWrap = styled.div`
 width: 100%;
 height: 100%;
-display: flex;
-justify-content: center;
 background-color: var(--neutral-silver);
 `
 
@@ -14,8 +12,8 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 height: 84px;
-width: 100%;
-max-width: 1152px;
+width: 76%;
+margin: 0 auto;
 `;
 export const Content = styled.div`
 display: flex;
@@ -23,6 +21,9 @@ align-items: center;
 justify-content: center;
 &:nth-child(2){
     gap: 50px;
+    @media (max-width: 1250px){
+        gap:25px;
+    }
 }
 &:first-child{
     gap: 8px;

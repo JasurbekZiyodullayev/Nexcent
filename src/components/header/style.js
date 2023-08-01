@@ -2,8 +2,6 @@ import { styled } from "styled-components";
 
 const HeaderWrap = styled.div`
 width: 100%;
-display: flex;
-justify-content: center;
 background-color: var(--neutral-silver);
 .slide{
     display: flex;
@@ -28,8 +26,8 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 96px 0;
-width: 100%;
-max-width: 1152px;
+width: 76%;
+margin: 0 auto;
 `
 const Content = styled.div`
 display: flex;
