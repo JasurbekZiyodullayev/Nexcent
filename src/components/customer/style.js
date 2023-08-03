@@ -13,6 +13,10 @@ margin: 0 auto;
 display: flex;
 justify-content: space-between;
 align-items: center;
+@media (max-width: 780px) {
+    flex-direction: column;
+    width: 90%;
+}
 `;
 const Left = styled.div`
 width: 326px;
@@ -38,6 +42,12 @@ width: 748px;
 @media (max-width: 1300px) {
     width: 550px;
 }
+@media (max-width: 780px) {
+    align-items: center;
+}
+@media (max-width: 610px) {
+            width: 100%;
+        }
 h4{
     font-size: 20px;
     font-style: normal;
@@ -45,14 +55,27 @@ h4{
     line-height: 28px;
     color: var(--brand-primary);
     margin: 16px 0 8px;
+    @media (max-width: 920px) {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 p{
+
     &:first-child{
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: 24px;
         color: var(--neutral-grey);
+        @media (max-width: 920px) {
+        font-size: 14px;
+        line-height: 20px;
+        @media (max-width: 780px) {
+            text-align: center;
+        }
+        
+    }
     }
     &:nth-child(3){
         font-size: 16px;
@@ -60,6 +83,10 @@ p{
         font-weight: 400;
         line-height: 24px;
         color: var(--neutral-l-grey);
+        @media (max-width: 920px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
     }
 }
 
@@ -67,6 +94,11 @@ p{
     margin-top: 32px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 485px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
     .icons{
         @media (max-width: 1430px) {
            gap: 30px;
@@ -75,6 +107,12 @@ p{
            gap: 20px;
            img{
             width: 35px;
+           }
+        }
+        @media (max-width: 990px) {
+           gap: 15px;
+           img{
+            width: 30px;
            }
         }
         display: flex;

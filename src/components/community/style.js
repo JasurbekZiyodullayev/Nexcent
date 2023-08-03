@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 
 const CommunityWrap = styled.div`
 width: 100%;
+height: 100%;
 background-color: var(--default-white);
 display: flex;
 justify-content: center;
@@ -15,6 +16,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 16px;
+@media (max-width: 780px) {
+    width: 90%;
+}
 `;
 
 const TextContent = styled.div`
@@ -22,6 +26,9 @@ display: flex;
 flex-direction: column;
 gap: 8px;
 width: 542px;
+@media (max-width: 610px) {
+            width: 100%;
+        }
 h2{
     font-size: 36px;
     font-weight: 600;
@@ -29,6 +36,10 @@ h2{
     font-style: normal;
     text-align: center;
     color: var(--neutral-d-grey);
+    @media (max-width: 920px) {
+        font-size: 30px;
+        line-height: 38px;
+}
 }
 p{
     font-size: 16px;
@@ -37,10 +48,18 @@ p{
     line-height: 24px;
     color: var(--neutral-grey);
     text-align: center;
+    @media (max-width: 920px) {
+        font-size: 14px;
+        line-height: 20px;
+}
 }
 `;
 
 const CardContent = styled.div`
+@media (max-width: 1200px) {
+    justify-content: center;
+    gap: 24px;
+}
 width: 100%;
 display: flex;
 align-items: center;
@@ -49,7 +68,6 @@ justify-content: space-between;
 `;
 const Card = styled.div`
 width: 299px;
-height: 100%;
 max-height: 280px;
 border-radius: 8px;
 padding: 24px 32px;
@@ -72,6 +90,10 @@ div{
         font-weight: 700;
         font-style: normal;
         line-height: 36px;
+        @media (max-width: 920px) {
+        font-size: 24px;
+        line-height: 30px;
+}
         color: var(--neutral-d-grey);
     }
 }

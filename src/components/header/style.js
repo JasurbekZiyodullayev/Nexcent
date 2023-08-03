@@ -28,6 +28,11 @@ justify-content: space-between;
 padding: 96px 0;
 width: 76%;
 margin: 0 auto;
+@media (max-width: 780px) {
+    width: 90%;
+    flex-direction: column;
+    gap: 24px;
+}
 `
 const Content = styled.div`
 display: flex;
@@ -38,6 +43,8 @@ align-items: center;
     width: 657px;
     align-items: flex-start;
     gap: 32px;
+
+
     h1{
         font-size: 64px;
         font-style: normal;
@@ -55,6 +62,28 @@ align-items: center;
         line-height: 24px;
         color: var(--neutral-grey);
     }
+    @media (max-width: 920px) {
+        width: 100%;
+        h1{
+            font-size: 48px;
+            line-height: 60px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            width: 350px;
+        }
+    }
+    @media (max-width: 780px) {
+    width: 100%;
+    align-items: center;
+    h1{
+        text-align: center;
+    }
+    p{
+        display: none;
+    }
+}
 }
 `;
 const Button = styled.button`
@@ -69,6 +98,11 @@ border-radius: 4px;
 border: 0;
 outline: none;
 cursor: pointer;
+@media (max-width: 920px) {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 24px;
+}
 `;
 
 export { HeaderWrap, Container, Content, Button }

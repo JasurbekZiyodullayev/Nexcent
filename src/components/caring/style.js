@@ -10,11 +10,17 @@ margin: 0 auto;
 display: flex;
 flex-direction: column;
 align-items: center;
+@media (max-width: 780px) {
+    width: 90%;
+}
 `;
 
 const TextWrap = styled.div`
 margin-bottom: 16px;
 width: 628px;
+@media (max-width: 820px) {
+    width: 100%;
+}
 h2{
     font-size: 36px;
     font-style: normal;
@@ -22,6 +28,10 @@ h2{
     line-height: 44px;
     color: var(--neutral-d-grey);
     text-align: center;
+    @media (max-width: 920px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
 }
 p{
     font-size: 16px;
@@ -30,18 +40,33 @@ p{
     line-height: 24px;
     color: var(--neutral-grey);
     text-align: center;
+    @media (max-width: 920px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 `;
 const CardWrap = styled.div`
 width: 100%;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+row-gap: 100px;
+column-gap: 24px;
+justify-content: center;
 align-items: center;
 `;
 const Card = styled.div`
 position: relative;
+@media (max-width: 410px) {
+    img{
+        width: 300px;
+    }
+}
 .contentWrap{
+    @media (max-width: 410px) {
+        width: 250px;
+        left: calc(50% - 125px)
+    }
     box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);
     position: absolute;
     bottom: -75px;
@@ -63,6 +88,10 @@ position: relative;
         line-height: 28px;
         color: var(--neutral-grey);
         text-align: center;
+        @media (max-width: 920px) {
+        font-size: 18px;
+        line-height: 24px;
+    }
     }
     button{
         width: 100%;
@@ -78,6 +107,10 @@ position: relative;
         font-style: normal;
         font-weight: 600;
         line-height: 28px; 
+        @media (max-width: 920px) {
+        font-size: 18px;
+        line-height: 24px;
+    }
         color: var(--brand-primary);
         background-color: var(--neutral-silver);
         &:hover{
